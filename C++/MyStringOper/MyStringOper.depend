@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1714500989 source:d:\codeblocks\poo\mystringoper\main.cpp
+	<iostream>
+	"MyStringOper.h"
+
+1714500530 source:d:\codeblocks\poo\mystringoper\src\mystringoper.cpp
+	"MyStringOper.h"
+	<iostream>
+	<string.h>
+
+1714480411 d:\codeblocks\poo\mystringoper\include\mystringoper.h
+	<iostream>
+

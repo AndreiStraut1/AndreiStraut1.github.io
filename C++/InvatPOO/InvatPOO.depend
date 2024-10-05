@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1713289521 source:d:\codeblocks\poo\invatpoo\main.cpp
+	<iostream>
+	<list>
+

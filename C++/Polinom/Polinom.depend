@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1714345457 source:d:\codeblocks\poo\polinom\main.cpp
+	<iostream>
+	<math.h>
+

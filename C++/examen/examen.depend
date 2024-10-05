@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1718351087 source:d:\codeblocks\poo\examen\main.cpp
+	<iostream>
+	<string.h>
+

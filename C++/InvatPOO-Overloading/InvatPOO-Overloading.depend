@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1713875607 source:d:\codeblocks\poo\invatpoo-overloading\main.cpp
+	<iostream>
+	<string>
+	<list>
+
