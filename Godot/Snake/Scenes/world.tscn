@@ -1,0 +1,87 @@
+[gd_scene load_steps=6 format=3 uid="uid://1vo6qogsjsm1"]
+
+[ext_resource type="Script" path="res://Scripts/grid.gd" id="1_3qjmf"]
+[ext_resource type="Script" path="res://Scripts/snake.gd" id="2_xif18"]
+[ext_resource type="Script" path="res://Scenes/spawner_food.gd" id="3_ord57"]
+[ext_resource type="Script" path="res://Scenes/CanvasLayer.gd" id="4_0ieb4"]
+[ext_resource type="FontFile" uid="uid://b433tmta172wx" path="res://Fonts/font_acme7_wide.ttf" id="4_akxcm"]
+
+[node name="World" type="Node2D"]
+
+[node name="grid" type="Node2D" parent="."]
+script = ExtResource("1_3qjmf")
+
+[node name="snake" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_xif18")
+
+[node name="spawner_food" type="Node2D" parent="."]
+script = ExtResource("3_ord57")
+
+[node name="GameOverLayer" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+script = ExtResource("4_0ieb4")
+
+[node name="Canvas" type="ColorRect" parent="GameOverLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.223529, 0.223529, 0.223529, 0.87451)
+
+[node name="GameOver" type="Label" parent="GameOverLayer/Canvas"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -49.0
+offset_right = 64.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_akxcm")
+text = "Game Over"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="GameOverLayer/Canvas"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 15.0
+offset_top = -14.0
+offset_right = 55.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_akxcm")
+text = "0"
+horizontal_alignment = 1
+
+[node name="Score2" type="Label" parent="GameOverLayer/Canvas"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.0
+offset_top = -14.0
+offset_right = -11.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_akxcm")
+text = "Score:"
+horizontal_alignment = 1
+
+[connection signal="score_up" from="spawner_food" to="GameOverLayer" method="_on_spawner_food_score_up"]

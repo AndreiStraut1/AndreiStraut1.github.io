@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3 uid="uid://bkad8f531r8gl"]
+
+[ext_resource type="Texture2D" uid="uid://d38ceuoo614k4" path="res://assets/bg.png" id="1_k4gxi"]
+[ext_resource type="Script" path="res://main.gd" id="1_plwv1"]
+[ext_resource type="PackedScene" uid="uid://bgo5sha2ajivm" path="res://bird.tscn" id="2_b0642"]
+[ext_resource type="PackedScene" uid="uid://dwy3bo8rdy23s" path="res://ground.tscn" id="3_awtuv"]
+[ext_resource type="Script" path="res://CanvasLayer.gd" id="5_2ov6i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36tcl"]
+size = Vector2(10, 226)
+
+[sub_resource type="Curve2D" id="Curve2D_wrivo"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1070, 85, 0, 0, 0, 0, 1068, 530)
+}
+point_count = 2
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_plwv1")
+
+[node name="BackGround" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(432, 384)
+texture = ExtResource("1_k4gxi")
+
+[node name="Bird" parent="." instance=ExtResource("2_b0642")]
+position = Vector2(423, 366)
+
+[node name="Ground" parent="." instance=ExtResource("3_awtuv")]
+z_index = 1
+position = Vector2(864, 684)
+
+[node name="Border" type="Area2D" parent="."]
+position = Vector2(-327, 698)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border"]
+position = Vector2(-543, -25)
+shape = SubResource("RectangleShape2D_36tcl")
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_wrivo")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+unique_name_in_owner = true
+position = Vector2(1070, 85)
+rotation = 1.57529
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("5_2ov6i")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_right = 863.0
+offset_bottom = 127.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 100
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="game_over" from="Bird" to="." method="_on_bird_game_over"]
+[connection signal="scoreUp" from="Bird" to="CanvasLayer" method="_on_bird_score_up"]
+[connection signal="body_entered" from="Border" to="Ground" method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

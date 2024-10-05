@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://no4cosr7suh0"]
+
+[ext_resource type="PackedScene" uid="uid://bn5pra4xvhrbo" path="res://block.tscn" id="1_6c36w"]
+[ext_resource type="PackedScene" uid="uid://cv2qyys8xg2y1" path="res://cox.tscn" id="2_08qn1"]
+[ext_resource type="PackedScene" uid="uid://btpt0fu2bxnui" path="res://coin.tscn" id="3_iw724"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_n37k1"]
+size = Vector3(10, 0.5, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y7n0x"]
+size = Vector3(10, 0.5, 10)
+
+[node name="Level 1" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.870253, 0.492606, 0, -0.492606, 0.870253, 0, 3.49463, 7.37061)
+fov = 83.2292
+
+[node name="Floor" type="StaticBody3D" parent="."]
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("BoxMesh_n37k1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("BoxShape3D_y7n0x")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.965926, -0.12941, 0.224144, 0, 0.866025, 0.5, -0.258819, -0.482963, 0.836516, 0, 9, 9.48385)
+shadow_enabled = true
+
+[node name="Blocks" type="Node3D" parent="."]
+
+[node name="Block1" parent="Blocks" instance=ExtResource("1_6c36w")]
+transform = Transform3D(1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, 2.04303, 5, 0)
+
+[node name="Block2" parent="Blocks" instance=ExtResource("1_6c36w")]
+transform = Transform3D(1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, 1.68099, 7.32262, 0)
+
+[node name="Block3" parent="Blocks" instance=ExtResource("1_6c36w")]
+transform = Transform3D(1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, 0, 5, 0)
+
+[node name="Block4" parent="Blocks" instance=ExtResource("1_6c36w")]
+transform = Transform3D(1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, -2.52364, 7.32262, 0)
+
+[node name="Cox" parent="." instance=ExtResource("2_08qn1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 4)
+
+[node name="Coin" parent="." instance=ExtResource("3_iw724")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51635, 2.03616, 1.19944)

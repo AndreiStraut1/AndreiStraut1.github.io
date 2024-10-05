@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv2qyys8xg2y1"]
+
+[ext_resource type="Script" path="res://cox.gd" id="1_ypdlr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rn3of"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nfypd"]
+
+[node name="Cox" type="CharacterBody3D"]
+script = ExtResource("1_ypdlr")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_rn3of")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_nfypd")

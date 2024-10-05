@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8ofakqtlhrus"]
+
+[ext_resource type="Texture2D" uid="uid://den4sx3n8oo4t" path="res://assets/pipe.png" id="1_ltlcv"]
+[ext_resource type="Script" path="res://pipes.gd" id="1_n1b2x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sskjl"]
+size = Vector2(78, 560)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tgxeg"]
+size = Vector2(40, 110)
+
+[node name="Pipes" type="Node2D"]
+script = ExtResource("1_n1b2x")
+
+[node name="Pipe1" type="Area2D" parent="."]
+position = Vector2(0, -350)
+rotation = 3.14159
+collision_layer = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Pipe1"]
+texture = ExtResource("1_ltlcv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pipe1"]
+shape = SubResource("RectangleShape2D_sskjl")
+
+[node name="Pipe2" type="Area2D" parent="."]
+position = Vector2(0, 350)
+collision_layer = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Pipe2"]
+texture = ExtResource("1_ltlcv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pipe2"]
+shape = SubResource("RectangleShape2D_sskjl")
+
+[node name="InBetween" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InBetween"]
+shape = SubResource("RectangleShape2D_tgxeg")
+debug_color = Color(0.560784, 0.560784, 0.101961, 0.419608)

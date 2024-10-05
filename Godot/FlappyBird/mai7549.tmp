@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkad8f531r8gl"]
+
+[ext_resource type="Texture2D" uid="uid://d38ceuoo614k4" path="res://assets/bg.png" id="1_k4gxi"]
+[ext_resource type="PackedScene" uid="uid://bgo5sha2ajivm" path="res://bird.tscn" id="2_b0642"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(432, 384)
+texture = ExtResource("1_k4gxi")
+
+[node name="Bird" parent="." instance=ExtResource("2_b0642")]
+position = Vector2(423, 366)
