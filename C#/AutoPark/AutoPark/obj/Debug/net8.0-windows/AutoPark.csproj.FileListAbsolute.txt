@@ -1,0 +1,32 @@
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\bin\Debug\net8.0-windows\AutoPark.exe
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\bin\Debug\net8.0-windows\AutoPark.deps.json
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\bin\Debug\net8.0-windows\AutoPark.runtimeconfig.json
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\bin\Debug\net8.0-windows\AutoPark.dll
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\bin\Debug\net8.0-windows\AutoPark.pdb
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.Form1.resources
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.csproj.GenerateResource.cache
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.AssemblyInfoInputs.cache
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.AssemblyInfo.cs
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.csproj.CoreCompileInputs.cache
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.dll
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\refint\AutoPark.dll
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.pdb
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.genruntimeconfig.cache
+D:\Proiecte Gogosaresti\AutoPark\AutoPark\obj\Debug\net8.0-windows\ref\AutoPark.dll
+D:\Proiecte\AutoPark\AutoPark\bin\Debug\net8.0-windows\AutoPark.exe
+D:\Proiecte\AutoPark\AutoPark\bin\Debug\net8.0-windows\AutoPark.deps.json
+D:\Proiecte\AutoPark\AutoPark\bin\Debug\net8.0-windows\AutoPark.runtimeconfig.json
+D:\Proiecte\AutoPark\AutoPark\bin\Debug\net8.0-windows\AutoPark.dll
+D:\Proiecte\AutoPark\AutoPark\bin\Debug\net8.0-windows\AutoPark.pdb
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.Form1.resources
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.csproj.GenerateResource.cache
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.AssemblyInfoInputs.cache
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.AssemblyInfo.cs
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.csproj.CoreCompileInputs.cache
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.dll
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\refint\AutoPark.dll
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.pdb
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\AutoPark.genruntimeconfig.cache
+D:\Proiecte\AutoPark\AutoPark\obj\Debug\net8.0-windows\ref\AutoPark.dll

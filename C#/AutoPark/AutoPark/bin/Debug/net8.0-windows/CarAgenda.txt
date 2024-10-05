@@ -1,0 +1,5 @@
+1; Fiat Punto; Grey; 2002; 0; 1.2L 5MT FWD (80 HP)
+2; Chevrolet Aveo; Grey; 2006; 1000; 1.4 16V
+3; Land Rover Freelander Hardback; Green; 1999; 1250; 1.9 diesel
+4; Renault Megane II; Black; 2006; 2000; 1.6 16V (112 Hp)
+5; Volkswagen Polo; Black; 2010; 3000; 1.6 TDI
